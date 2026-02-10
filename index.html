@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NextVG Encryptor for MacVG</title>
-    <script src="https://kbsigmaboy67atschool.github.io/-/s.js"></script><nvg style="display:none !important;">tab.name:`New Tab`,tab.image.src:`https://google.com/favicon.ico`,tab.closePreventionEnabled:`yes`</nvg>
+    <script src="https://kbsigmaboy67atschool.github.io/-/s.js"></script><nvg style="display:none !important;">tab.name:`New Tab`,tab.image.src:`https://www.google.com/favicon.ico`,tab.closePreventionEnabled:`yes`</nvg>
     <style>
         * {
             margin: 0;
@@ -491,7 +491,7 @@
 <body>
     <div class="container">
         <h1>⚡ NEXTVG ENCRYPTOR ⚡</h1>
-        <p class="subtitle">[ MACVG SECURITY SUITE // CLASSIFIED ]</p>
+        <p class="subtitle">[ JJ0R ENC GOVERMENT FILE // CLASSIFIED ]</p>
 
         <div id="alert" class="alert"></div>
 
@@ -554,7 +554,7 @@
             </div>
 
             <div class="section">
-                <label>Authorized Person Name (Optional):</label>
+                <label>NextKey password (Optional):</label>
                 <input type="text" id="personName" placeholder="Enter name of person allowed to decrypt">
             </div>
 
@@ -611,8 +611,8 @@
             </div>
 
             <div class="section">
-                <label>Your Name (if required):</label>
-                <input type="text" id="decryptPersonName" placeholder="Enter your name">
+                <label>NextKey password (if required):</label>
+                <input type="text" id="decryptPersonName" placeholder="Enter your NextKey">
             </div>
 
             <div class="button-group">
@@ -925,7 +925,7 @@
                 // Check person name
                 const inputName = document.getElementById('decryptPersonName').value.trim();
                 if (metadata.personName && inputName !== metadata.personName) {
-                    showAlert(`Access denied! This data is encrypted for: ${metadata.personName}`, 'error');
+                    showAlert(`Access denied to data!`, 'error');
                     return;
                 }
 
@@ -974,7 +974,7 @@
                     <strong>File Name:</strong> ${metadata.fileName}<br>
                     <strong>Encrypted:</strong> ${new Date(metadata.timestamp).toLocaleString()}<br>
                     <strong>Size:</strong> ${formatBytes(binaryData.length)}<br>
-                    ${metadata.personName ? `<strong>Authorized:</strong> ${metadata.personName}<br>` : ''}
+                    ${metadata.personName ? `<strong>NextKey password:</strong> ${metadata.personName}<br>` : ''}
                     ${metadata.expiration ? `<strong>Expires:</strong> ${new Date(metadata.expiration).toLocaleString()}<br>` : ''}
                 `;
                 
